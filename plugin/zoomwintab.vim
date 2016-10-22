@@ -79,6 +79,9 @@ function! ZoomWinTabToggle()
     else
         call ZoomWinTabIn()
     endif
+    if exists('g:ZoomWinFuncRef')
+        call g:ZoomWinFuncRef()
+    endif
 endfunction
 
 " commands {{{1
